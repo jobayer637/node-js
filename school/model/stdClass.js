@@ -11,6 +11,10 @@ const stdClassSchema = new Schema({
         ref: "Classes",
         required: true
     },
+    result: {
+        type: Schema.Types.ObjectId,
+        ref: "Result"
+    },
     status: {
         type: String,
         trim: true,

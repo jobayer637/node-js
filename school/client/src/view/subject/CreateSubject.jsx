@@ -11,7 +11,7 @@ export class CreateSubject extends Component {
             className: '',
             subjectType: '',
             group: '',
-            marks: 0
+            marks: 100
         },
         error: {},
         successAlert: false,
@@ -70,7 +70,7 @@ export class CreateSubject extends Component {
         return (
             <div className="card border border-warning rounded-0">
             <div className="card-header bg-warning d-flex justify-content-between">
-                <h3>Add New Class Form</h3>
+                <h3>Add New Subject Form</h3>
                 {this.state.successAlert? <CustomAlert
                     title="Success"
                     message="New Class Successfully Added"

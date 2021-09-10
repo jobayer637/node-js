@@ -10,6 +10,7 @@ const teacherRoute = require('./route/teacherRoute')
 const classRoute = require('./route/classRoute')
 const stdClassRoute = require('./route/stdClassRoute')
 const subjectRoute = require('./route/subjectRoute')
+const resultRoute = require('./route/resultRoute')
 
 const PORT = 4000
 
@@ -25,6 +26,7 @@ app.use('/api/teacher', teacherRoute)
 app.use('/api/class', classRoute)
 app.use('/api/std-class', stdClassRoute)
 app.use('/api/subject', subjectRoute)
+app.use('/api/result', resultRoute)
 
 app.get("/", (req, res) => {
     res.send("Home page")
